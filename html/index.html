@@ -1,22 +1,149 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<style>
+
+#input1 {
+	width: 400px;
+	height: 30px;
+  border-radius: 4px
+}
+
+nav {
+	height: 3em;
+}
+
+.center {
+	margin: auto;
+	width: 60%;
+	border: 3px solid white;
+	padding: 10px;
+	text-align: center;
+}
+
+.centertwo {
+	margin: auto;
+	width: 20%;
+	border: 3px solid white;
+	padding: 10px;
+	text-align: left;
+}
+
+.centerthree {
+	margin: auto;
+	width: 55%;
+	border: 3px solid white;
+	padding: 10px;
+	text-align: left;
+}
+
+.centerfour {
+	margin: auto;
+	width: 55%;
+	border: 3px solid white;
+	padding: 10px;
+	text-align: left;
+}
+
+.centerfive {
+	margin: auto;
+	width: 30%;
+	border: 3px solid white;
+	padding: 10px;
+	text-align: left;
+}
+
+button {
+  background: #3498db;
+  border-radius: 7px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+	width: 400px;
+	height: 45px;
+  text-decoration: none;
+	text-align: center;
+}
+
+button:hover {
+  background: #7dcdff;
+  text-decoration: none;
+}
+
+ul {
+			height: 30px;
+			float;
+			left;
+			width: 100%;
+		}
+
+		li {
+			background: #1e5799; /* Old browsers */
+			background: -moz-linear-gradient(left,  #1e5799 0%, #2989d8 30%, #2989d8 30%, #2989d8 38%, #2989d8 38%, #2989d8 40%, #84ea7e 61%, #84ea7e 61%, #84ea7e 65%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left,  #1e5799 0%,#2989d8 30%,#2989d8 30%,#2989d8 38%,#2989d8 38%,#2989d8 40%,#84ea7e 61%,#84ea7e 61%,#84ea7e 65%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right,  #1e5799 0%,#2989d8 30%,#2989d8 30%,#2989d8 38%,#2989d8 38%,#2989d8 40%,#84ea7e 61%,#84ea7e 61%,#84ea7e 65%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#84ea7e',GradientType=1 ); /* IE6-9 */
+		padding: 10px;
+		border:	1px solid black;
+		width: 100%;
+		height: 60%;
+		text-align: center;
+		margin: auto 5px;
+		display:block;
+		float:left;
+
+		}
+
+
+
+
+</style>
 		<title> MEAN Template </title>
 	</head>
 	<body>
 		<!-- Let's fill in some things -->
+
+		<nav>
+			<li></li>
+			</nav>
+
+
+		<br><br><br><br><br><br><br>
+
+		<div class="centertwo">
+			<h1>Join Twitter today.</h1>
+	  </div>
 <form action="/signup" method="POST">
-<div>
-	<label for="name">Name:</label>
-	<input type="text" id="name" name="name" placeholder="Enter your name"
+<div class="center">
+	<label for="name"></label>
+	<input id="input1" type="text" id="name" name="name" placeholder="Full name"
 </div>
-<div>
-	<label for="email">Email:</label>
-	<input type="email" id="email" name="email" placeholder="Enter your email">
+
+<br>
+
+<div class="center">
+	<label for="email"></label>
+	<input id="input1"type="email" id="email" name="email" placeholder="Phone or Email">
 </div>
-<div>
-	<button type="submit">Signup</button>
-	<input type="submit" value="Signup">
+
+<div class="center">
+	<label for="password"></label>
+	<input id="input1"type="password" id="password" name="password" placeholder="Password">
+
+<br><br>
+
+<input type="checkbox" name="vehicle" value="Car" checked="checked"> Tailor Twitter based on my most recent website visits. <a href="/"> Learn more. </a>
+
+	<br> <br>
+
+	<button type="submit">Sign up</button>
+
+<div class="centerfour">
+	By signing up, you agree to the <a href="/">Terms of Service</a> and <a href="/">Privacy Policy</a>, including <a href="/">Cookie Use</a>. Others will be able to find you by email or phone number when provided.
+</div>
+
+<div class="centerthree">
+<a href="/">Advanced options</a>
 </div>
 	</body>
 </html>
